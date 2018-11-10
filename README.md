@@ -8,14 +8,14 @@
 #Run Backend
 - npm install
 - nodemon index
-- Running on http://127.0.0.1:3000
+- Running on http://127.0.0.1:8000
 
 
 #Run Frontend
 - cd client/todos
 - npm install
 - npm start
-- Running on http://127.0.0.1:3001
+- Running on http://127.0.0.1:3000
 
 #Database
 - Make sure you have Mongodb on your machine

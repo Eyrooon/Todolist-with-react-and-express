@@ -22,7 +22,7 @@ app.get('/', (req,res) => {
 
 app.use('/api/todos', todoRoutes);
 
-app.listen(3000, () => {
+app.listen(8000, () => {
     console.log("APP IS RUNNING"); 
 })
 
