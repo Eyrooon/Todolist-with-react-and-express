@@ -20,6 +20,7 @@ h1 {
 li {
     margin-bottom:1em;
     list-style-type: none;
+    cursor: pointer;
 }
 
 li:hover {

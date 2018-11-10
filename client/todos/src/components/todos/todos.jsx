@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './todos.css';
+import './todos.css';
 
 
 const Todos = props => (
@@ -11,7 +11,7 @@ const Todos = props => (
         </form>
         <ul>
             {props.todos.map((todos, i) => (
-                <li onClick={() => props.onHandleComplete(todos._id, todos.completed)} style={{textDecoration: todos.completed ? 'line-through' : null}} key={i}>{todos.name} <span onClick={() => props.onHandleDelete(todos._id)}>X</span></li>
+                <li title={todos.completed ? 'Click to uncomplete' : 'Click to complete!'} onClick={() => props.onHandleComplete(todos._id, todos.completed)} style={{textDecoration: todos.completed ? 'line-through' : null}} key={i}>{todos.name} <span onClick={() => props.onHandleDelete(todos._id)}>X</span></li>
             ))}
         </ul>   
     </div>
